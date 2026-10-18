@@ -21,7 +21,7 @@ source.
 ## Catalogs
 
 - **Generate, never hand-edit.** Use the `universal-plugin:marketplace` skill, or
-  `npx universal-plugin@0.15.0 marketplace add <spec> --claude --codex --copilot --cursor`. The generator
+  `npx universal-plugin@0.16.0 marketplace add <spec> --claude --codex --copilot --cursor`. The generator
   skips each harness that cannot install the source; report the skips.
 - **List only what installs today.** Check the npm tarball or the repo's plugin manifest before
   adding an entry. A plugin whose package carries a manifest but no skills, hooks, or MCP server
