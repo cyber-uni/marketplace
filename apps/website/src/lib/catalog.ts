@@ -2,6 +2,7 @@
 // never lists a plugin that is not in `.claude-plugin/marketplace.json`, and it offers a
 // harness's install command only when that harness's catalog carries the entry.
 import codexCatalog from '../../../../.agents/plugins/marketplace.json'
+import copilotCatalog from '../../../../.github/plugin/marketplace.json'
 import claudeCatalog from '../../../../.claude-plugin/marketplace.json'
 import moves from '../../../../data/moves.json'
 
@@ -9,8 +10,8 @@ const marketplaceName = claudeCatalog.name
 
 type Source =
 	| { source: 'npm'; package: string }
-	| { source: 'github'; repo: string }
-	| { source: 'git-subdir'; url: string; path: string }
+	| { source: 'github'; repo: string; path?: string }
+	| { source: 'git-subdir'; url: string; path: string; ref?: string }
 	| { source: string }
 
 interface Install {
@@ -30,11 +31,12 @@ interface Listing {
 }
 
 const codexNames = new Set(codexCatalog.plugins.map((p) => p.name))
+const copilotNames = new Set(copilotCatalog.plugins.map((p) => p.name))
 const moveMap: Record<string, { to: string }> = moves.moves
 
 function describeSource(source: Source, repository: string): string {
 	if ('package' in source) return `npm ${source.package}`
-	if ('repo' in source) return `GitHub ${source.repo}`
+	if ('repo' in source) return `${source.repo}${source.path ? `/${source.path}` : ''}`
 	if ('path' in source) return `${repository.replace('https://github.com/', '')}/${source.path}`
 	return repository
 }
@@ -48,8 +50,13 @@ export function readListings(): Listing[] {
 				codexNames.has(plugin.name)
 					? { harness: 'Codex', command: `codex plugin add ${plugin.name}@${marketplaceName}` }
 					: { harness: 'Codex', note: 'not available' },
-				{ harness: 'GitHub Copilot CLI', note: 'not available' },
-				{ harness: 'Cursor', note: 'not available' },
+				copilotNames.has(plugin.name)
+					? {
+							harness: 'GitHub Copilot CLI',
+							command: `copilot plugin install ${plugin.name}@${marketplaceName}`,
+						}
+					: { harness: 'GitHub Copilot CLI', note: 'not available' },
+				{ harness: 'Cursor', note: 'import the catalog as a team marketplace' },
 			]
 			return {
 				name: plugin.name,

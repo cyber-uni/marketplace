@@ -7,8 +7,8 @@ The spikyuni marketplace is a plugin catalog for AI coding agents. Add this repo
 harness once, and you can install any plugin it lists by name.
 
 The marketplace holds no plugin source. Each entry points at the place the plugin ships from today:
-an npm package, a GitHub repository, or a directory inside one. When a plugin publishes a new
-version, the marketplace serves it without a change here.
+a GitHub repository, or a directory inside one, pinned to the tag of the published version. When a
+plugin publishes a new version, the entry's tag moves with a catalog update here.
 
 ## What it lists
 
