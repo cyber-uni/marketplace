@@ -7,9 +7,11 @@
 		"check": "biome check --write",
 		"check:ci": "biome ci",
 		"knip": "knip",
+		"marketplace:validate": "npx universal-plugin@0.15.0 marketplace validate",
 		"prepare": "node -e \"if(!(process.env.CI||process.env.GITHUB_ACTIONS))require('child_process').execSync('husky',{stdio:'inherit'})\"",
 		"typecheck": "turbo typecheck",
-		"verify": "pnpm check:ci && pnpm knip && turbo build typecheck"
+		"verify": "pnpm check:ci && pnpm knip && pnpm marketplace:validate && turbo build typecheck",
+		"web": "pnpm --filter=website"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^2.5.15",
