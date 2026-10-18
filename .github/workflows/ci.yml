@@ -1,0 +1,20 @@
+name: ci
+on:
+  pull_request:
+  push:
+    branches: [main]
+  # A merge-queue branch fires neither `pull_request` nor the default-branch `push`.
+  merge_group:
+
+permissions:
+  contents: read
+
+jobs:
+  # Require `verify / all-checks` in the branch ruleset.
+  verify:
+    uses: spikyuni/.github/.github/workflows/pnpm-verify.yml@v1
+    with:
+      # Nothing here is OS-specific: catalogs are JSON and the site is static.
+      os: '["ubuntu-latest"]'
+      playwright-browsers: ''
+      codecov: false
