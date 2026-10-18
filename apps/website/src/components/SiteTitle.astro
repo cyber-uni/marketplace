@@ -1,0 +1,80 @@
+---
+import Default from '@astrojs/starlight/components/SiteTitle.astro'
+
+const base = import.meta.env.BASE_URL
+
+const navItems = [
+	{ label: 'Docs', href: `${base}getting-started/introduction` },
+	{ label: 'Marketplace', href: `${base}marketplace` },
+]
+
+const pathname = Astro.url.pathname
+
+function isActive(href: string): boolean {
+	// prefix match, but don't let "/" swallow every route
+	const normalized = href.endsWith('/') ? href : `${href}/`
+	const currentNormalized = pathname.endsWith('/') ? pathname : `${pathname}/`
+	return currentNormalized === normalized || currentNormalized.startsWith(normalized)
+}
+---
+
+<div class="site-title">
+	<Default />
+	<nav class="top-nav" aria-label="Top navigation">
+		{
+			navItems.map((item) => {
+				const active = isActive(item.href)
+				return (
+					<a
+						href={item.href}
+						class={active ? 'top-nav-link active' : 'top-nav-link'}
+						aria-current={active ? 'page' : undefined}
+					>
+						{item.label}
+					</a>
+				)
+			})
+		}
+	</nav>
+</div>
+
+<style>
+	.site-title {
+		display: flex;
+		align-items: center;
+		gap: 1.5rem;
+		min-width: 0;
+	}
+	.top-nav {
+		display: flex;
+		align-items: center;
+		gap: 0.25rem;
+	}
+	.top-nav-link {
+		font-size: var(--sl-text-sm);
+		font-weight: 500;
+		color: var(--sl-color-gray-3);
+		text-decoration: none;
+		padding: 0.35rem 0.75rem;
+		border-radius: 9999px;
+		white-space: nowrap;
+		transition:
+			color 0.15s ease,
+			background-color 0.15s ease;
+	}
+	.top-nav-link:hover {
+		color: var(--sl-color-white);
+		background: rgba(255, 255, 255, 0.05);
+	}
+	.top-nav-link.active {
+		color: var(--sl-color-white);
+		background: var(--sl-color-accent-low);
+	}
+
+	/* The sidebar hamburger covers navigation on narrow viewports. */
+	@media (max-width: 50rem) {
+		.top-nav {
+			display: none;
+		}
+	}
+</style>

@@ -1,0 +1,32 @@
+---
+title: spikyuni marketplace
+description: The plugin marketplace for spikyuni's agentic plugins, for Claude Code, Codex, GitHub Copilot CLI, and Cursor.
+template: splash
+hero:
+  tagline: One catalog for spikyuni's agentic plugins. Add it once, install any plugin by name.
+  image:
+    alt: spikyuni
+    dark: ../../assets/logo-dark.svg
+    light: ../../assets/logo-light.svg
+  actions:
+    - text: Browse plugins
+      link: /marketplace/marketplace/
+      icon: right-arrow
+    - text: Get started
+      link: /marketplace/getting-started/introduction/
+      icon: open-book
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components'
+
+<CardGrid>
+	<Card title="Add the marketplace" icon="add-document">
+		`/plugin marketplace add spikyuni/marketplace` in Claude Code, or
+		`codex plugin marketplace add spikyuni/marketplace` in Codex.
+	</Card>
+	<Card title="Install a plugin" icon="rocket">
+		`/plugin install cyber-mux@spikyuni`. Every plugin card in the
+		[marketplace](/marketplace/marketplace/) shows the command for each harness.
+	</Card>
+</CardGrid>
