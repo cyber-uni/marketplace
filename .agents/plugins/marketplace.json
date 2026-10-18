@@ -1,0 +1,116 @@
+{
+  "name": "spikyuni",
+  "interface": {
+    "displayName": "spikyuni"
+  },
+  "plugins": [
+    {
+      "name": "cyberfleet",
+      "source": {
+        "source": "npm",
+        "package": "cyberfleet"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "cyberlegion",
+      "source": {
+        "source": "npm",
+        "package": "cyberlegion"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "cyber-mux",
+      "source": {
+        "source": "npm",
+        "package": "cyber-mux"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "sdd",
+      "source": {
+        "source": "npm",
+        "package": "cyber-sdd"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "aced",
+      "source": {
+        "source": "npm",
+        "package": "cyber-aced"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "cyber-agent-harness",
+      "source": {
+        "source": "npm",
+        "package": "@cyberuni/agent-harness"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "cyber-asana",
+      "source": {
+        "source": "npm",
+        "package": "cyber-asana"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "cyber-figma",
+      "source": {
+        "source": "npm",
+        "package": "cyber-figma"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "universal-plugin",
+      "source": {
+        "source": "npm",
+        "package": "universal-plugin"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

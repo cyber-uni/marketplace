@@ -1,0 +1,14 @@
+{
+	"$comment": "Where each listed plugin is moving. Keys are catalog entry names as they ship today; `to` is the spikyuni name it takes. When a rename ships, regenerate that entry with the new source and drop its line here.",
+	"moves": {
+		"cyberfleet": { "to": "uni-fleet" },
+		"cyberlegion": { "to": "uni-legion" },
+		"cyber-mux": { "to": "uni-mux" },
+		"sdd": { "to": "uni-sdd" },
+		"aced": { "to": "uni-aced" },
+		"quill": { "to": "uni-quill" },
+		"cyber-agent-harness": { "to": "uni-agent-kit" },
+		"cyber-asana": { "to": "uni-asana" },
+		"cyber-figma": { "to": "uni-figma" }
+	}
+}
