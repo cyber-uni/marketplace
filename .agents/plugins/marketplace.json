@@ -7,8 +7,10 @@
     {
       "name": "cyberfleet",
       "source": {
-        "source": "npm",
-        "package": "cyberfleet"
+        "source": "git-subdir",
+        "url": "https://github.com/cyberuni/cyberfleet.git",
+        "path": "packages/cyberfleet",
+        "ref": "cyberfleet@0.5.2"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -19,8 +21,10 @@
     {
       "name": "cyberlegion",
       "source": {
-        "source": "npm",
-        "package": "cyberlegion"
+        "source": "git-subdir",
+        "url": "https://github.com/cyberuni/cyberlegion.git",
+        "path": "packages/cyberlegion",
+        "ref": "cyberlegion@1.5.0"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -31,8 +35,10 @@
     {
       "name": "cyber-mux",
       "source": {
-        "source": "npm",
-        "package": "cyber-mux"
+        "source": "git-subdir",
+        "url": "https://github.com/cyberuni/cyber-mux.git",
+        "path": "packages/cyber-mux",
+        "ref": "cyber-mux@0.10.0"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -43,8 +49,10 @@
     {
       "name": "sdd",
       "source": {
-        "source": "npm",
-        "package": "cyber-sdd"
+        "source": "git-subdir",
+        "url": "https://github.com/cyberuni/cyber-sdd.git",
+        "path": "plugins/sdd",
+        "ref": "cyber-sdd@0.6.1"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -55,8 +63,10 @@
     {
       "name": "aced",
       "source": {
-        "source": "npm",
-        "package": "cyber-aced"
+        "source": "git-subdir",
+        "url": "https://github.com/cyberuni/cyber-sdd.git",
+        "path": "plugins/aced",
+        "ref": "cyber-sdd@0.6.1"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -67,8 +77,10 @@
     {
       "name": "cyber-agent-harness",
       "source": {
-        "source": "npm",
-        "package": "@cyberuni/agent-harness"
+        "source": "git-subdir",
+        "url": "https://github.com/spikyuni/uni-agent-kit.git",
+        "path": "packages/agent-harness",
+        "ref": "@cyberuni/agent-harness@0.7.1"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -79,8 +91,10 @@
     {
       "name": "cyber-asana",
       "source": {
-        "source": "npm",
-        "package": "cyber-asana"
+        "source": "git-subdir",
+        "url": "https://github.com/cyberuni/cyber-asana.git",
+        "path": "packages/cyber-asana",
+        "ref": "cyber-asana@0.21.1"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -91,8 +105,10 @@
     {
       "name": "cyber-figma",
       "source": {
-        "source": "npm",
-        "package": "cyber-figma"
+        "source": "git-subdir",
+        "url": "https://github.com/cyberuni/cyber-figma.git",
+        "path": "packages/cyber-figma",
+        "ref": "cyber-figma@0.1.1"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -103,8 +119,37 @@
     {
       "name": "universal-plugin",
       "source": {
-        "source": "npm",
-        "package": "universal-plugin"
+        "source": "git-subdir",
+        "url": "https://github.com/cyberuni/universal-plugin.git",
+        "path": "packages/universal-plugin",
+        "ref": "universal-plugin@0.15.0"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "quill",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/cyberuni/cyber-sdd.git",
+        "path": "plugins/quill",
+        "ref": "cyber-sdd@0.6.1"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "research-workbench",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/cyberuni/research-workbench.git",
+        "ref": "main"
       },
       "policy": {
         "installation": "AVAILABLE",

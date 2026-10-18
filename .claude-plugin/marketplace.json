@@ -8,8 +8,10 @@
     {
       "name": "cyberfleet",
       "source": {
-        "source": "npm",
-        "package": "cyberfleet"
+        "source": "git-subdir",
+        "url": "https://github.com/cyberuni/cyberfleet.git",
+        "path": "packages/cyberfleet",
+        "ref": "cyberfleet@0.5.2"
       },
       "description": "Fleet & crew personas over cyberlegion — Pod (ship's bridge), Operator (command center), Crimp (crew recruitment), and Mechanic (automaton building).",
       "homepage": "https://github.com/cyberuni/cyberfleet",
@@ -24,8 +26,10 @@
     {
       "name": "cyberlegion",
       "source": {
-        "source": "npm",
-        "package": "cyberlegion"
+        "source": "git-subdir",
+        "url": "https://github.com/cyberuni/cyberlegion.git",
+        "path": "packages/cyberlegion",
+        "ref": "cyberlegion@1.5.0"
       },
       "description": "Agent session spawning, messaging, and dispatch — the Legion and its Legate.",
       "homepage": "https://github.com/cyberuni/cyberlegion",
@@ -40,8 +44,10 @@
     {
       "name": "cyber-mux",
       "source": {
-        "source": "npm",
-        "package": "cyber-mux"
+        "source": "git-subdir",
+        "url": "https://github.com/cyberuni/cyber-mux.git",
+        "path": "packages/cyber-mux",
+        "ref": "cyber-mux@0.10.0"
       },
       "description": "Cross-multiplexer pane control: open, send, read, focus, and close panes over tmux, herdr, wezterm, and more.",
       "homepage": "https://cyberuni.github.io/cyber-mux/",
@@ -57,8 +63,10 @@
     {
       "name": "sdd",
       "source": {
-        "source": "npm",
-        "package": "cyber-sdd"
+        "source": "git-subdir",
+        "url": "https://github.com/cyberuni/cyber-sdd.git",
+        "path": "plugins/sdd",
+        "ref": "cyber-sdd@0.6.1"
       },
       "description": "Spec-Driven Development. Scaffold, validate, and maintain behavioral specs (spec.md + .feature files) for software features.",
       "homepage": "https://github.com/cyberuni/cyber-sdd",
@@ -72,8 +80,10 @@
     {
       "name": "aced",
       "source": {
-        "source": "npm",
-        "package": "cyber-aced"
+        "source": "git-subdir",
+        "url": "https://github.com/cyberuni/cyber-sdd.git",
+        "path": "plugins/aced",
+        "ref": "cyber-sdd@0.6.1"
       },
       "description": "Agent Config Evaluation & Development. Spec, evaluate, and improve agent configurations: skills, AGENTS.md sections, subagent definitions, and commands.",
       "homepage": "https://github.com/cyberuni/cyber-sdd",
@@ -89,7 +99,8 @@
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/cyberuni/cyber-sdd.git",
-        "path": "plugins/quill"
+        "path": "plugins/quill",
+        "ref": "cyber-sdd@0.6.1"
       },
       "description": "Documentation SDD plugin. Spec, write, and verify documentation — guides, tutorials, articles, reference pages, and READMEs — as implementation artifacts with verifiable structure.",
       "homepage": "https://github.com/cyberuni/cyber-sdd",
@@ -103,8 +114,10 @@
     {
       "name": "cyber-agent-harness",
       "source": {
-        "source": "npm",
-        "package": "@cyberuni/agent-harness"
+        "source": "git-subdir",
+        "url": "https://github.com/spikyuni/uni-agent-kit.git",
+        "path": "packages/agent-harness",
+        "ref": "@cyberuni/agent-harness@0.7.1"
       },
       "description": "A toolkit for working with AI agent harnesses: detect which one is running, query its managed-policy locations, plugin storage, enabled plugins, and skill naming, and resolve layered reference documents.",
       "homepage": "https://github.com/spikyuni/uni-agent-kit",
@@ -121,8 +134,10 @@
     {
       "name": "cyber-asana",
       "source": {
-        "source": "npm",
-        "package": "cyber-asana"
+        "source": "git-subdir",
+        "url": "https://github.com/cyberuni/cyber-asana.git",
+        "path": "packages/cyber-asana",
+        "ref": "cyber-asana@0.21.1"
       },
       "description": "Asana CLI and agent skills, with an opt-in MCP server.",
       "homepage": "https://github.com/cyberuni/cyber-asana",
@@ -138,8 +153,10 @@
     {
       "name": "cyber-figma",
       "source": {
-        "source": "npm",
-        "package": "cyber-figma"
+        "source": "git-subdir",
+        "url": "https://github.com/cyberuni/cyber-figma.git",
+        "path": "packages/cyber-figma",
+        "ref": "cyber-figma@0.1.1"
       },
       "description": "Figma CLI and MCP server for AI agents.",
       "homepage": "https://github.com/cyberuni/cyber-figma",
@@ -155,8 +172,10 @@
     {
       "name": "universal-plugin",
       "source": {
-        "source": "npm",
-        "package": "universal-plugin"
+        "source": "git-subdir",
+        "url": "https://github.com/cyberuni/universal-plugin.git",
+        "path": "packages/universal-plugin",
+        "ref": "universal-plugin@0.15.0"
       },
       "description": "Research and design toolkit for building universal AI coding agent plugins that work across Claude Code, Cursor, Codex, and GitHub Copilot CLI.",
       "homepage": "https://github.com/cyberuni/universal-plugin",
@@ -174,7 +193,8 @@
       "name": "research-workbench",
       "source": {
         "source": "github",
-        "repo": "cyberuni/research-workbench"
+        "repo": "cyberuni/research-workbench",
+        "ref": "main"
       },
       "description": "Durable research workflows and community post authoring for AI coding agents.",
       "homepage": "https://github.com/cyberuni/research-workbench",
