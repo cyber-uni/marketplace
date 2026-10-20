@@ -4,17 +4,17 @@ import tailwindcss from '@tailwindcss/vite'
 import { defineConfig } from 'astro/config'
 
 export default defineConfig({
-	site: 'https://spikyuni.github.io',
+	site: 'https://cyber-uni.github.io',
 	base: '/marketplace/',
 	vite: {
 		plugins: [tailwindcss()],
 	},
 	integrations: [
 		starlight({
-			title: 'spikyuni marketplace',
+			title: 'cyber-uni marketplace',
 			description:
-				"The plugin marketplace for spikyuni's agentic plugins: Claude Code, Codex, GitHub Copilot CLI, and Cursor.",
-			// The spikyuni org mark (spikyuni/.github brand/): the u with the AI spark inside
+				"The plugin marketplace for cyber-uni's agentic plugins: Claude Code, Codex, GitHub Copilot CLI, and Cursor.",
+			// The cyber-uni org mark (cyber-uni/.github brand/): the u with the AI spark inside
 			// the shared cyber-* frame.
 			//
 			// The favicon self-themes: browser chrome follows the OS, so that one file
@@ -28,13 +28,13 @@ export default defineConfig({
 			logo: {
 				light: './src/assets/logo-light.svg',
 				dark: './src/assets/logo-dark.svg',
-				alt: 'spikyuni',
+				alt: 'cyber-uni',
 			},
 			social: [
 				{
 					icon: 'github',
 					label: 'GitHub',
-					href: 'https://github.com/spikyuni/marketplace',
+					href: 'https://github.com/cyber-uni/marketplace',
 				},
 			],
 			customCss: ['./src/styles/global.css'],

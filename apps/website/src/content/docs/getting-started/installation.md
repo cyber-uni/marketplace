@@ -1,16 +1,16 @@
 ---
 title: Installation
-description: Add the spikyuni marketplace to Claude Code, Codex, GitHub Copilot CLI, or Cursor, and install a plugin from it.
+description: Add the cyber-uni marketplace to Claude Code, Codex, GitHub Copilot CLI, or Cursor, and install a plugin from it.
 ---
 
 Adding a marketplace registers the catalog. It installs nothing until you install a plugin from it.
-The marketplace is named `spikyuni`, and that is the name after the `@` in every install command.
+The marketplace is named `cyber-uni`, and that is the name after the `@` in every install command.
 
 ## Claude Code
 
 ```
-/plugin marketplace add spikyuni/marketplace
-/plugin install <plugin>@spikyuni
+/plugin marketplace add cyber-uni/marketplace
+/plugin install <plugin>@cyber-uni
 ```
 
 Both commands also run outside a session as `claude plugin marketplace add` and
@@ -20,8 +20,8 @@ auto-update third-party marketplaces unless you turn that on under `/plugin` →
 ## Codex
 
 ```
-codex plugin marketplace add spikyuni/marketplace
-codex plugin add <plugin>@spikyuni
+codex plugin marketplace add cyber-uni/marketplace
+codex plugin add <plugin>@cyber-uni
 ```
 
 Codex installs with `plugin add`, not `plugin install`.
@@ -29,8 +29,8 @@ Codex installs with `plugin add`, not `plugin install`.
 ## GitHub Copilot CLI
 
 ```
-copilot plugin marketplace add spikyuni/marketplace
-copilot plugin install <plugin>@spikyuni
+copilot plugin marketplace add cyber-uni/marketplace
+copilot plugin install <plugin>@cyber-uni
 ```
 
 ## Cursor

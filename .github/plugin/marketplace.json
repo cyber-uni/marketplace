@@ -1,10 +1,10 @@
 {
-	"name": "spikyuni",
+	"name": "cyber-uni",
 	"owner": {
-		"name": "spikyuni"
+		"name": "cyber-uni"
 	},
 	"metadata": {
-		"displayName": "spikyuni"
+		"displayName": "cyber-uni"
 	},
 	"plugins": [
 		{
@@ -88,10 +88,12 @@
 			"name": "cyber-agent-harness",
 			"source": {
 				"source": "github",
-				"repo": "spikyuni/uni-agent-kit",
+				"repo": "cyber-uni/cyber-agentkit",
 				"path": "packages/agent-harness",
 				"ref": "@cyberuni/agent-harness@0.7.1"
-			}
+			},
+			"homepage": "https://cyber-uni.github.io/cyber-agentkit/",
+			"repository": "https://github.com/cyber-uni/cyber-agentkit"
 		},
 		{
 			"name": "cyber-asana",
