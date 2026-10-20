@@ -1,10 +1,10 @@
-# spikyuni marketplace
+# cyber-uni marketplace
 
-[![ci](https://github.com/spikyuni/marketplace/actions/workflows/ci.yml/badge.svg)](https://github.com/spikyuni/marketplace/actions/workflows/ci.yml)
+[![ci](https://github.com/cyber-uni/marketplace/actions/workflows/ci.yml/badge.svg)](https://github.com/cyber-uni/marketplace/actions/workflows/ci.yml)
 
-The plugin marketplace for spikyuni's agentic plugins, for AI coding agents.
+The plugin marketplace for cyber-uni's agentic plugins, for AI coding agents.
 
-**Website:** <https://spikyuni.github.io/marketplace/> lists every plugin with its install command
+**Website:** <https://cyber-uni.github.io/marketplace/> lists every plugin with its install command
 for each harness.
 
 ## Install
@@ -12,22 +12,22 @@ for each harness.
 **Claude Code**
 
 ```
-/plugin marketplace add spikyuni/marketplace
-/plugin install <plugin>@spikyuni
+/plugin marketplace add cyber-uni/marketplace
+/plugin install <plugin>@cyber-uni
 ```
 
 **Codex**
 
 ```
-codex plugin marketplace add spikyuni/marketplace
-codex plugin add <plugin>@spikyuni
+codex plugin marketplace add cyber-uni/marketplace
+codex plugin add <plugin>@cyber-uni
 ```
 
 **GitHub Copilot CLI**
 
 ```
-copilot plugin marketplace add spikyuni/marketplace
-copilot plugin install <plugin>@spikyuni
+copilot plugin marketplace add cyber-uni/marketplace
+copilot plugin install <plugin>@cyber-uni
 ```
 
 **Cursor** has no command that adds a repository catalog. An admin imports this repository as a team
@@ -37,23 +37,21 @@ Start a new session before using the plugin.
 
 ## Plugins
 
-Each plugin is listed under the name and source it ships from today. Most are moving to the
-`spikyuni` org under a `uni-` name; [`data/moves.json`](data/moves.json) records where each one is
-going.
+Each plugin is listed under the name and source it ships from.
 
-| Plugin                | Source                                                                         | Moving to       | Claude Code | Codex | Copilot CLI |
-| --------------------- | ------------------------------------------------------------------------------ | --------------- | ----------- | ----- | ----------- |
-| `aced` | [cyberuni/cyber-sdd](https://github.com/cyberuni/cyber-sdd) `plugins/aced` | `uni-aced` | yes | yes | yes |
-| `cyber-agent-harness` | [spikyuni/uni-agent-kit](https://github.com/spikyuni/uni-agent-kit) `packages/agent-harness` | `uni-agent-kit` | yes | yes | yes |
-| `cyber-asana` | [cyberuni/cyber-asana](https://github.com/cyberuni/cyber-asana) `packages/cyber-asana` | `uni-asana` | yes | yes | yes |
-| `cyber-figma` | [cyberuni/cyber-figma](https://github.com/cyberuni/cyber-figma) `packages/cyber-figma` | `uni-figma` | yes | yes | yes |
-| `cyber-mux` | [cyberuni/cyber-mux](https://github.com/cyberuni/cyber-mux) `packages/cyber-mux` | `uni-mux` | yes | yes | yes |
-| `cyberfleet` | [cyberuni/cyberfleet](https://github.com/cyberuni/cyberfleet) `packages/cyberfleet` | `uni-fleet` | yes | yes | yes |
-| `cyberlegion` | [cyberuni/cyberlegion](https://github.com/cyberuni/cyberlegion) `packages/cyberlegion` | `uni-legion` | yes | yes | yes |
-| `quill` | [cyberuni/cyber-sdd](https://github.com/cyberuni/cyber-sdd) `plugins/quill` | `uni-quill` | yes | yes | yes |
-| `research-workbench` | [cyberuni/research-workbench](https://github.com/cyberuni/research-workbench) | (kept) | yes | yes | yes |
-| `sdd` | [cyberuni/cyber-sdd](https://github.com/cyberuni/cyber-sdd) `plugins/sdd` | `uni-sdd` | yes | yes | yes |
-| `universal-plugin` | [cyberuni/universal-plugin](https://github.com/cyberuni/universal-plugin) `packages/universal-plugin` | (kept) | yes | yes | yes |
+| Plugin                | Source                                                                         | Claude Code | Codex | Copilot CLI |
+| --------------------- | ------------------------------------------------------------------------------ | ----------- | ----- | ----------- |
+| `aced` | [cyberuni/cyber-sdd](https://github.com/cyberuni/cyber-sdd) `plugins/aced` | yes | yes | yes |
+| `cyber-agent-harness` | [cyber-uni/cyber-agentkit](https://github.com/cyber-uni/cyber-agentkit) `packages/agent-harness` | yes | yes | yes |
+| `cyber-asana` | [cyberuni/cyber-asana](https://github.com/cyberuni/cyber-asana) `packages/cyber-asana` | yes | yes | yes |
+| `cyber-figma` | [cyberuni/cyber-figma](https://github.com/cyberuni/cyber-figma) `packages/cyber-figma` | yes | yes | yes |
+| `cyber-mux` | [cyberuni/cyber-mux](https://github.com/cyberuni/cyber-mux) `packages/cyber-mux` | yes | yes | yes |
+| `cyberfleet` | [cyberuni/cyberfleet](https://github.com/cyberuni/cyberfleet) `packages/cyberfleet` | yes | yes | yes |
+| `cyberlegion` | [cyberuni/cyberlegion](https://github.com/cyberuni/cyberlegion) `packages/cyberlegion` | yes | yes | yes |
+| `quill` | [cyberuni/cyber-sdd](https://github.com/cyberuni/cyber-sdd) `plugins/quill` | yes | yes | yes |
+| `research-workbench` | [cyberuni/research-workbench](https://github.com/cyberuni/research-workbench) | yes | yes | yes |
+| `sdd` | [cyberuni/cyber-sdd](https://github.com/cyberuni/cyber-sdd) `plugins/sdd` | yes | yes | yes |
+| `universal-plugin` | [cyberuni/universal-plugin](https://github.com/cyberuni/universal-plugin) `packages/universal-plugin` | yes | yes | yes |
 
 ## Development
 

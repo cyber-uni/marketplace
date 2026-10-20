@@ -4,7 +4,6 @@
 import codexCatalog from '../../../../.agents/plugins/marketplace.json'
 import copilotCatalog from '../../../../.github/plugin/marketplace.json'
 import claudeCatalog from '../../../../.claude-plugin/marketplace.json'
-import moves from '../../../../data/moves.json'
 
 const marketplaceName = claudeCatalog.name
 
@@ -26,13 +25,11 @@ interface Listing {
 	tags: string[]
 	sourceLabel: string
 	sourceUrl: string
-	movingTo?: string
 	installs: Install[]
 }
 
 const codexNames = new Set(codexCatalog.plugins.map((p) => p.name))
 const copilotNames = new Set(copilotCatalog.plugins.map((p) => p.name))
-const moveMap: Record<string, { to: string }> = moves.moves
 
 function describeSource(source: Source, repository: string): string {
 	if ('package' in source) return `npm ${source.package}`
@@ -64,7 +61,6 @@ export function readListings(): Listing[] {
 				tags: plugin.keywords ?? [],
 				sourceLabel: describeSource(source, plugin.repository),
 				sourceUrl: plugin.homepage ?? plugin.repository,
-				movingTo: moveMap[plugin.name]?.to,
 				installs,
 			}
 		})

@@ -38,17 +38,12 @@ const allTags = [...new Set(listings.flatMap((l) => l.tags))].sort((a, b) => a.l
 							class="listing-card"
 							id={listing.name}
 							data-listing
-							data-name={`${listing.name} ${listing.movingTo ?? ''}`.toLowerCase()}
+							data-name={listing.name.toLowerCase()}
 							data-description={listing.description.toLowerCase()}
 							data-tags={listing.tags.join(' ').toLowerCase()}
 						>
 							<header class="listing-card-header">
 								<h3 class="listing-name">{listing.name}</h3>
-								{listing.movingTo && (
-									<span class="listing-badge" title={`Moving to ${listing.movingTo} in the spikyuni org`}>
-										→ {listing.movingTo}
-									</span>
-								)}
 							</header>
 							<p class="listing-description">{listing.description}</p>
 							{listing.tags.length > 0 && (
@@ -262,15 +257,6 @@ const allTags = [...new Set(listings.flatMap((l) => l.tags))].sort((a, b) => a.l
 		margin: 0;
 		font-size: var(--sl-text-lg);
 		color: var(--sl-color-text);
-	}
-	.listing-badge {
-		font-size: var(--sl-text-xs);
-		font-weight: 600;
-		color: var(--linear-accent-hover);
-		background: var(--linear-accent-low);
-		border: 1px solid var(--linear-accent-hover);
-		border-radius: 999px;
-		padding: 0.15rem 0.6rem;
 	}
 	.listing-description {
 		margin: 0;

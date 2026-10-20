@@ -10,12 +10,11 @@
 
 ## Architecture
 
-This repo is the spikyuni plugin marketplace. It lists plugins by reference and holds no plugin
+This repo is the cyber-uni plugin marketplace. It lists plugins by reference and holds no plugin
 source.
 
 - `.claude-plugin/marketplace.json`: the Claude Code catalog. Codex and Copilot CLI also read it.
 - `.agents/plugins/marketplace.json`: the Codex catalog.
-- `data/moves.json`: the `uni-*` name each listed plugin is moving to. The site reads it.
 - `apps/website`: the Astro + Starlight site, deployed to GitHub Pages on push to `main`.
 
 ## Catalogs
@@ -26,8 +25,6 @@ source.
 - **List only what installs today.** Check the npm tarball or the repo's plugin manifest before
   adding an entry. A plugin whose package carries a manifest but no skills, hooks, or MCP server
   installs nothing.
-- **When a `uni-*` rename ships:** regenerate that entry with the new name and source, and drop its
-  line from `data/moves.json`.
 - **Never write a Cursor install command.** Cursor has no command that adds a repository catalog.
 - `pnpm marketplace:validate` checks every catalog against the schema its harness loads.
   `pnpm verify` runs it.
@@ -42,7 +39,7 @@ source.
   unreachable.
 - The plugin grid reads the catalogs at build time (`apps/website/src/lib/catalog.ts`). Do not copy
   plugin data into the site.
-- The logo is the spikyuni org mark from `spikyuni/.github` `brand/`. Change it there first.
+- The logo is the cyber-uni org mark from `cyber-uni/.github` `brand/`. Change it there first.
 
 ## Validation After Changes
 
@@ -53,7 +50,7 @@ pnpm verify   # biome, knip, catalog validation, build, typecheck
 ```
 
 CI runs the same `verify` script on every pull request through
-`spikyuni/.github/.github/workflows/pnpm-verify.yml@v1`.
+`cyber-uni/.github/.github/workflows/pnpm-verify.yml@v1`.
 
 ## Language
 
