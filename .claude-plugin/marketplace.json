@@ -1,8 +1,8 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
-  "name": "spikyuni",
+  "name": "cyber-uni",
   "owner": {
-    "name": "spikyuni"
+    "name": "cyber-uni"
   },
   "plugins": [
     {
@@ -115,13 +115,13 @@
       "name": "cyber-agent-harness",
       "source": {
         "source": "git-subdir",
-        "url": "https://github.com/spikyuni/uni-agent-kit.git",
+        "url": "https://github.com/cyber-uni/cyber-agentkit.git",
         "path": "packages/agent-harness",
         "ref": "@cyberuni/agent-harness@0.7.1"
       },
       "description": "A toolkit for working with AI agent harnesses: detect which one is running, query its managed-policy locations, plugin storage, enabled plugins, and skill naming, and resolve layered reference documents.",
-      "homepage": "https://github.com/spikyuni/uni-agent-kit",
-      "repository": "https://github.com/spikyuni/uni-agent-kit",
+      "homepage": "https://cyber-uni.github.io/cyber-agentkit/",
+      "repository": "https://github.com/cyber-uni/cyber-agentkit",
       "license": "MIT",
       "keywords": [
         "agent-harness",
