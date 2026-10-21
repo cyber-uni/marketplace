@@ -14,8 +14,8 @@ export default defineConfig({
 			title: 'cyber-uni marketplace',
 			description:
 				"The plugin marketplace for cyber-uni's agentic plugins: Claude Code, Codex, GitHub Copilot CLI, and Cursor.",
-			// The cyber-uni org mark (cyber-uni/.github brand/): the u with the AI spark inside
-			// the shared cyber-* frame.
+			// The marketplace mark: the shared cyber-* frame around a grid of plugin tiles, one of
+			// them the cyber-uni AI spark. It is this repo's own, not the org mark.
 			//
 			// The favicon self-themes: browser chrome follows the OS, so that one file
 			// flips its own fill under `prefers-color-scheme` and needs no pair.
@@ -28,7 +28,7 @@ export default defineConfig({
 			logo: {
 				light: './src/assets/logo-light.svg',
 				dark: './src/assets/logo-dark.svg',
-				alt: 'cyber-uni',
+				alt: 'cyber-uni marketplace',
 			},
 			social: [
 				{

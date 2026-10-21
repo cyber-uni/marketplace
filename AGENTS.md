@@ -39,7 +39,7 @@ source.
   unreachable.
 - The plugin grid reads the catalogs at build time (`apps/website/src/lib/catalog.ts`). Do not copy
   plugin data into the site.
-- The logo is the cyber-uni org mark from `cyber-uni/.github` `brand/`. Change it there first.
+- The logo is the marketplace mark (`apps/website/src/assets/logo-*.svg`, `public/img/logo.svg`), its own and not the cyber-uni org mark. It keeps the cyber-* corner frame and the AI spark. Edit the three SVGs together.
 
 ## Validation After Changes
 
