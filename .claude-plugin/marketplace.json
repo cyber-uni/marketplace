@@ -112,14 +112,14 @@
       ]
     },
     {
-      "name": "cyber-agent-harness",
+      "name": "cyber-agentkit",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/cyber-uni/cyber-agentkit.git",
-        "path": "packages/agent-harness",
-        "ref": "@cyberuni/agent-harness@0.7.1"
+        "path": "packages/cyber-agentkit",
+        "ref": "cyber-agentkit@1.0.0"
       },
-      "description": "A toolkit for working with AI agent harnesses: detect which one is running, query its managed-policy locations, plugin storage, enabled plugins, and skill naming, and resolve layered reference documents.",
+      "description": "An agent-harness-agnostic toolkit: the fundamental features agent tools need, working the same on every harness. Detect the running harness, check plugin dependencies, resolve layered reference documents, and lease git worktrees.",
       "homepage": "https://cyber-uni.github.io/cyber-agentkit/",
       "repository": "https://github.com/cyber-uni/cyber-agentkit",
       "license": "MIT",
