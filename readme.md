@@ -42,7 +42,7 @@ Each plugin is listed under the name and source it ships from.
 | Plugin                | Source                                                                         | Claude Code | Codex | Copilot CLI |
 | --------------------- | ------------------------------------------------------------------------------ | ----------- | ----- | ----------- |
 | `aced` | [cyberuni/cyber-sdd](https://github.com/cyberuni/cyber-sdd) `plugins/aced` | yes | yes | yes |
-| `cyber-agent-harness` | [cyber-uni/cyber-agentkit](https://github.com/cyber-uni/cyber-agentkit) `packages/agent-harness` | yes | yes | yes |
+| `cyber-agentkit` | [cyber-uni/cyber-agentkit](https://github.com/cyber-uni/cyber-agentkit) `packages/cyber-agentkit` | yes | yes | yes |
 | `cyber-asana` | [cyberuni/cyber-asana](https://github.com/cyberuni/cyber-asana) `packages/cyber-asana` | yes | yes | yes |
 | `cyber-figma` | [cyberuni/cyber-figma](https://github.com/cyberuni/cyber-figma) `packages/cyber-figma` | yes | yes | yes |
 | `cyber-mux` | [cyberuni/cyber-mux](https://github.com/cyberuni/cyber-mux) `packages/cyber-mux` | yes | yes | yes |

@@ -75,12 +75,12 @@
       "category": "Productivity"
     },
     {
-      "name": "cyber-agent-harness",
+      "name": "cyber-agentkit",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/cyber-uni/cyber-agentkit.git",
-        "path": "packages/agent-harness",
-        "ref": "@cyberuni/agent-harness@0.7.1"
+        "path": "packages/cyber-agentkit",
+        "ref": "cyber-agentkit@1.0.0"
       },
       "policy": {
         "installation": "AVAILABLE",
