@@ -53,6 +53,7 @@ Each plugin is listed under the name and source it ships from.
 | `repobuddy` | [repobuddy/repobuddy](https://github.com/repobuddy/repobuddy) `packages/buddy` | yes | yes | yes |
 | `research-workbench` | [cyberuni/research-workbench](https://github.com/cyberuni/research-workbench) | yes | yes | yes |
 | `sdd` | [cyberuni/cyber-sdd](https://github.com/cyberuni/cyber-sdd) `plugins/sdd` | yes | yes | yes |
+| `sdd2` | [cyberuni/cyber-sdd](https://github.com/cyberuni/cyber-sdd) `packages/cyber-sdd` | yes | no | yes |
 | `universal-plugin` | [cyberuni/universal-plugin](https://github.com/cyberuni/universal-plugin) `packages/universal-plugin` | yes | yes | yes |
 
 ## Development

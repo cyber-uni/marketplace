@@ -244,6 +244,25 @@
         "automation",
         "cli"
       ]
+    },
+    {
+      "name": "sdd2",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/cyberuni/cyber-sdd.git",
+        "path": "packages/cyber-sdd",
+        "ref": "cyber-sdd-2@0.1.0"
+      },
+      "description": "Spec-Driven Development, second generation — the SDD process plugin and its CLI.",
+      "homepage": "https://github.com/cyberuni/cyber-sdd",
+      "repository": "https://github.com/cyberuni/cyber-sdd",
+      "license": "MIT",
+      "keywords": [
+        "sdd",
+        "spec",
+        "process",
+        "cli"
+      ]
     }
   ]
 }
