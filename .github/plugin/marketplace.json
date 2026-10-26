@@ -152,6 +152,20 @@
 			"repository": "https://github.com/repobuddy/repobuddy",
 			"license": "MIT",
 			"keywords": ["agent-skills", "repository", "github", "automation", "cli"]
+		},
+		{
+			"name": "sdd2",
+			"source": {
+				"source": "github",
+				"repo": "cyberuni/cyber-sdd",
+				"path": "packages/cyber-sdd",
+				"ref": "cyber-sdd-2@0.1.0"
+			},
+			"description": "Spec-Driven Development, second generation — the SDD process plugin and its CLI.",
+			"homepage": "https://github.com/cyberuni/cyber-sdd",
+			"repository": "https://github.com/cyberuni/cyber-sdd",
+			"license": "MIT",
+			"keywords": ["sdd", "spec", "process", "cli"]
 		}
 	]
 }
