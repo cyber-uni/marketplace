@@ -149,7 +149,7 @@
         "source": "git-subdir",
         "url": "https://github.com/cyber-uni/cyber-agentkit.git",
         "path": "packages/cyber-agentkit",
-        "ref": "cyber-agentkit@1.0.0"
+        "ref": "cyber-agentkit@2.1.0"
       },
       "policy": {
         "installation": "AVAILABLE",
