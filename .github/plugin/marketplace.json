@@ -108,7 +108,7 @@
 				"source": "github",
 				"repo": "cyberuni/universal-plugin",
 				"path": "packages/universal-plugin",
-				"ref": "universal-plugin@0.16.2"
+				"ref": "universal-plugin@0.17.0"
 			}
 		},
 		{

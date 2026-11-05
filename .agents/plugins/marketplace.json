@@ -108,7 +108,7 @@
         "source": "git-subdir",
         "url": "https://github.com/cyberuni/universal-plugin.git",
         "path": "packages/universal-plugin",
-        "ref": "universal-plugin@0.16.2"
+        "ref": "universal-plugin@0.17.0"
       },
       "policy": {
         "installation": "AVAILABLE",
