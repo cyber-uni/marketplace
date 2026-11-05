@@ -13,7 +13,7 @@
 				"source": "github",
 				"repo": "cyberuni/cyberfleet",
 				"path": "packages/cyberfleet",
-				"ref": "cyberfleet@0.5.2"
+				"ref": "cyberfleet@0.6.0"
 			},
 			"description": "Fleet & crew personas over cyberlegion — Pod (ship's bridge), Operator (command center), Crimp (crew recruitment), and Mechanic (automaton building).",
 			"homepage": "https://github.com/cyberuni/cyberfleet",
@@ -27,7 +27,7 @@
 				"source": "github",
 				"repo": "cyberuni/cyber-sdd",
 				"path": "plugins/quill",
-				"ref": "cyber-sdd@0.7.0"
+				"ref": "cyber-sdd@0.7.3"
 			},
 			"description": "Documentation SDD plugin. Spec, write, and verify documentation — guides, tutorials, articles, reference pages, and READMEs — as implementation artifacts with verifiable structure.",
 			"homepage": "https://github.com/cyberuni/cyber-sdd",
@@ -54,7 +54,7 @@
 				"source": "github",
 				"repo": "cyberuni/cyberlegion",
 				"path": "packages/cyberlegion",
-				"ref": "cyberlegion@1.6.0"
+				"ref": "cyberlegion@1.6.1"
 			}
 		},
 		{
@@ -63,7 +63,7 @@
 				"source": "github",
 				"repo": "cyberuni/cyber-mux",
 				"path": "packages/cyber-mux",
-				"ref": "cyber-mux@0.10.1"
+				"ref": "cyber-mux@0.10.3"
 			}
 		},
 		{
@@ -72,7 +72,7 @@
 				"source": "github",
 				"repo": "cyberuni/cyber-sdd",
 				"path": "plugins/sdd",
-				"ref": "cyber-sdd@0.7.0"
+				"ref": "cyber-sdd@0.7.3"
 			}
 		},
 		{
@@ -81,7 +81,7 @@
 				"source": "github",
 				"repo": "cyberuni/cyber-sdd",
 				"path": "plugins/aced",
-				"ref": "cyber-sdd@0.7.0"
+				"ref": "cyber-sdd@0.7.3"
 			}
 		},
 		{
@@ -90,7 +90,7 @@
 				"source": "github",
 				"repo": "cyberuni/cyber-asana",
 				"path": "packages/cyber-asana",
-				"ref": "cyber-asana@0.22.0"
+				"ref": "cyber-asana@0.22.3"
 			}
 		},
 		{
@@ -99,7 +99,7 @@
 				"source": "github",
 				"repo": "cyberuni/cyber-figma",
 				"path": "packages/cyber-figma",
-				"ref": "cyber-figma@0.1.1"
+				"ref": "cyber-figma@0.2.0"
 			}
 		},
 		{
@@ -108,7 +108,7 @@
 				"source": "github",
 				"repo": "cyberuni/universal-plugin",
 				"path": "packages/universal-plugin",
-				"ref": "universal-plugin@0.17.0"
+				"ref": "universal-plugin@0.17.1"
 			}
 		},
 		{
@@ -131,7 +131,7 @@
 				"source": "github",
 				"repo": "repobuddy/buddy-agent-harness",
 				"path": "packages/buddy-agent-harness",
-				"ref": "buddy-agent-harness@0.22.0"
+				"ref": "buddy-agent-harness@1.0.1"
 			},
 			"description": "Initialize standards-based agent configuration across agent harnesses",
 			"homepage": "https://github.com/repobuddy/buddy-agent-harness",
@@ -145,7 +145,7 @@
 				"source": "github",
 				"repo": "repobuddy/repobuddy",
 				"path": "packages/buddy",
-				"ref": "repobuddy@4.0.0"
+				"ref": "repobuddy@4.3.1"
 			},
 			"description": "Agent skills for managing a repository — issues, dependency PRs, GitHub Pages, repo setup, and npm trusted publishing.",
 			"homepage": "https://github.com/repobuddy/repobuddy",
@@ -159,7 +159,7 @@
 				"source": "github",
 				"repo": "cyberuni/cyber-sdd",
 				"path": "packages/cyber-sdd",
-				"ref": "cyber-sdd-2@0.1.0"
+				"ref": "cyber-sdd-2@0.2.0"
 			},
 			"description": "Spec-Driven Development, second generation — the SDD process plugin and its CLI.",
 			"homepage": "https://github.com/cyberuni/cyber-sdd",
