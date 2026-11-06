@@ -55,10 +55,10 @@ export function readListings(): Listing[] {
 					: { harness: 'Codex', note: 'not available' },
 				copilotNames.has(plugin.name)
 					? {
-							harness: 'GitHub Copilot CLI',
+							harness: 'Copilot CLI',
 							command: `copilot plugin install ${plugin.name}@${marketplaceName}`,
 						}
-					: { harness: 'GitHub Copilot CLI', note: 'not available' },
+					: { harness: 'Copilot CLI', note: 'not available' },
 				{ harness: 'Cursor', note: 'import the catalog as a team marketplace' },
 			]
 			return {
