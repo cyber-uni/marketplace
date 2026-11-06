@@ -53,33 +53,38 @@ const allTags = [...new Set(listings.flatMap((l) => l.tags))].sort((a, b) => a.l
 									))}
 								</div>
 							)}
-							<dl class="listing-installs">
-								{listing.installs
-									.filter((install) => install.command)
-									.map((install) => (
-										<div class="listing-install-row">
-											<dt>{install.harness}</dt>
-											<dd>
-												<code class="listing-install">{install.command}</code>
-											</dd>
-										</div>
-									))}
-							</dl>
-							{listing.installs.some((install) => !install.command) && (
-								<p class="listing-unavailable">
-									Not yet available for{' '}
+							<div class="listing-install" data-install>
+								<div class="listing-install-tabs" role="tablist" aria-label="Harness">
 									{listing.installs
-										.filter((install) => !install.command)
-										.map((install) => install.harness)
-										.join(', ')}
-									. See <a href={`${import.meta.env.BASE_URL}getting-started/installation/`}>Installation</a>.
-								</p>
-							)}
+										.filter((install) => install.command)
+										.map((install, index) => (
+											<button
+												type="button"
+												role="tab"
+												class="listing-install-tab"
+												aria-selected={index === 0 ? 'true' : 'false'}
+												data-command={install.command}
+											>
+												{install.harness}
+											</button>
+										))}
+								</div>
+								<code class="listing-install-command" data-install-command>
+									{listing.installs.find((install) => install.command)?.command}
+								</code>
+							</div>
 							<footer class="listing-card-footer">
 								<span class="listing-source">{listing.sourceLabel}</span>
-								<a class="listing-source-link" href={listing.sourceUrl} target="_blank" rel="noopener noreferrer">
-									Source ↗
-								</a>
+								<span class="listing-links">
+									{listing.docsUrl && (
+										<a class="listing-source-link" href={listing.docsUrl} target="_blank" rel="noopener noreferrer">
+											Docs ↗
+										</a>
+									)}
+									<a class="listing-source-link" href={listing.sourceUrl} target="_blank" rel="noopener noreferrer">
+										Source ↗
+									</a>
+								</span>
 							</footer>
 						</article>
 					))}
@@ -130,6 +135,17 @@ const allTags = [...new Set(listings.flatMap((l) => l.tags))].sort((a, b) => a.l
 
 		search?.addEventListener('input', apply)
 
+		for (const install of root.querySelectorAll<HTMLElement>('[data-install]')) {
+			const output = install.querySelector<HTMLElement>('[data-install-command]')
+			const tabs = Array.from(install.querySelectorAll<HTMLButtonElement>('.listing-install-tab'))
+			for (const tab of tabs) {
+				tab.addEventListener('click', () => {
+					for (const other of tabs) other.setAttribute('aria-selected', String(other === tab))
+					if (output) output.textContent = tab.dataset.command ?? ''
+				})
+			}
+		}
+
 		for (const button of tagButtons) {
 			button.addEventListener('click', () => {
 				const tag = button.dataset.tag ?? ''
@@ -156,8 +172,7 @@ const allTags = [...new Set(listings.flatMap((l) => l.tags))].sort((a, b) => a.l
 <style>
 	/* Starlight spaces every markdown sibling apart with margin-top; inside these flex and
 	   grid layouts that offsets every item but the first. */
-	.marketplace :where(.marketplace-tags, .marketplace-grid, .listing-card, .listing-installs, .listing-tags) > *,
-	.listing-install-row > * {
+	.marketplace :where(.marketplace-tags, .marketplace-grid, .listing-card, .listing-install, .listing-tags) > * {
 		margin-top: 0;
 	}
 	.marketplace-empty {
@@ -286,23 +301,32 @@ const allTags = [...new Set(listings.flatMap((l) => l.tags))].sort((a, b) => a.l
 		padding-top: 0.75rem;
 		border-top: 1px solid var(--linear-border);
 	}
-	.listing-installs {
+	.listing-install {
 		display: flex;
 		flex-direction: column;
-		gap: 0.5rem;
-		margin: 0;
+		gap: 0.4rem;
 	}
-	.listing-install-row dt {
+	.listing-install-tabs {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.3rem;
+	}
+	.listing-install-tab {
 		font-size: var(--sl-text-xs);
 		font-weight: 600;
 		color: var(--sl-color-gray-3);
-		margin-bottom: 0.2rem;
+		background: transparent;
+		border: 1px solid var(--linear-border);
+		border-radius: 999px;
+		padding: 0.1rem 0.6rem;
+		cursor: pointer;
 	}
-	.listing-install-row dd {
-		margin: 0;
-		margin-inline-start: 0;
+	.listing-install-tab[aria-selected='true'] {
+		color: var(--linear-accent-hover);
+		background: var(--linear-accent-low);
+		border-color: var(--sl-color-accent);
 	}
-	.listing-install {
+	.listing-install-command {
 		display: block;
 		overflow-wrap: anywhere;
 		font-size: var(--sl-text-xs);
@@ -311,10 +335,9 @@ const allTags = [...new Set(listings.flatMap((l) => l.tags))].sort((a, b) => a.l
 		border-radius: 6px;
 		padding: 0.3rem 0.55rem;
 	}
-	.listing-unavailable {
-		margin: 0;
-		font-size: var(--sl-text-xs);
-		color: var(--sl-color-gray-3);
+	.listing-links {
+		display: flex;
+		gap: 0.75rem;
 	}
 	.listing-source {
 		font-size: var(--sl-text-xs);

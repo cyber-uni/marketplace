@@ -25,6 +25,7 @@ interface Listing {
 	tags: string[]
 	sourceLabel: string
 	sourceUrl: string
+	docsUrl?: string
 	installs: Install[]
 }
 
@@ -36,6 +37,11 @@ function describeSource(source: Source, repository: string): string {
 	if ('repo' in source) return `${source.repo}${source.path ? `/${source.path}` : ''}`
 	if ('path' in source) return `${repository.replace('https://github.com/', '')}/${source.path}`
 	return repository
+}
+
+// A homepage that is just the repository page is not a docs site.
+function isDocsSite(homepage: string | undefined, repository: string): boolean {
+	return !!homepage && !homepage.startsWith('https://github.com/') && homepage !== repository
 }
 
 export function readListings(): Listing[] {
@@ -60,7 +66,8 @@ export function readListings(): Listing[] {
 				description: plugin.description,
 				tags: plugin.keywords ?? [],
 				sourceLabel: describeSource(source, plugin.repository),
-				sourceUrl: plugin.homepage ?? plugin.repository,
+				sourceUrl: plugin.repository,
+				docsUrl: isDocsSite(plugin.homepage, plugin.repository) ? plugin.homepage : undefined,
 				installs,
 			}
 		})
