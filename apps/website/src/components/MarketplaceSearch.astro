@@ -54,15 +54,14 @@ const allTags = [...new Set(listings.flatMap((l) => l.tags))].sort((a, b) => a.l
 								</div>
 							)}
 							<div class="listing-install" data-install>
-								<div class="listing-install-tabs" role="tablist" aria-label="Harness">
+								<div class="listing-install-tabs" role="group" aria-label="Harness">
 									{listing.installs
 										.filter((install) => install.command)
 										.map((install, index) => (
 											<button
 												type="button"
-												role="tab"
 												class="listing-install-tab"
-												aria-selected={index === 0 ? 'true' : 'false'}
+												aria-pressed={index === 0 ? 'true' : 'false'}
 												data-command={install.command}
 											>
 												{install.harness}
@@ -140,7 +139,7 @@ const allTags = [...new Set(listings.flatMap((l) => l.tags))].sort((a, b) => a.l
 			const tabs = Array.from(install.querySelectorAll<HTMLButtonElement>('.listing-install-tab'))
 			for (const tab of tabs) {
 				tab.addEventListener('click', () => {
-					for (const other of tabs) other.setAttribute('aria-selected', String(other === tab))
+					for (const other of tabs) other.setAttribute('aria-pressed', String(other === tab))
 					if (output) output.textContent = tab.dataset.command ?? ''
 				})
 			}
@@ -172,7 +171,7 @@ const allTags = [...new Set(listings.flatMap((l) => l.tags))].sort((a, b) => a.l
 <style>
 	/* Starlight spaces every markdown sibling apart with margin-top; inside these flex and
 	   grid layouts that offsets every item but the first. */
-	.marketplace :where(.marketplace-tags, .marketplace-grid, .listing-card, .listing-install, .listing-tags) > * {
+	.marketplace :where(.marketplace-tags, .marketplace-grid, .listing-card, .listing-install, .listing-install-tabs, .listing-tags) > * {
 		margin-top: 0;
 	}
 	.marketplace-empty {
@@ -319,9 +318,14 @@ const allTags = [...new Set(listings.flatMap((l) => l.tags))].sort((a, b) => a.l
 		border: 1px solid var(--linear-border);
 		border-radius: 999px;
 		padding: 0.1rem 0.6rem;
+		margin: 0;
+		min-height: 0;
+		line-height: 1.5;
+		white-space: nowrap;
+		font-family: inherit;
 		cursor: pointer;
 	}
-	.listing-install-tab[aria-selected='true'] {
+	.listing-install-tab[aria-pressed='true'] {
 		color: var(--linear-accent-hover);
 		background: var(--linear-accent-low);
 		border-color: var(--sl-color-accent);
