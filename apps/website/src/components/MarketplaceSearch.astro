@@ -305,19 +305,22 @@ const allTags = [...new Set(listings.flatMap((l) => l.tags))].sort((a, b) => a.l
 		flex-direction: column;
 		gap: 0.4rem;
 	}
+	/* A joined segmented control, square-cornered, so it reads as a switch and not as a tag pill. */
 	.listing-install-tabs {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 0.3rem;
+		display: inline-flex;
+		align-self: flex-start;
+		border: 1px solid var(--linear-border);
+		border-radius: 6px;
+		overflow: hidden;
 	}
 	.listing-install-tab {
 		font-size: var(--sl-text-xs);
 		font-weight: 600;
 		color: var(--sl-color-gray-3);
 		background: transparent;
-		border: 1px solid var(--linear-border);
-		border-radius: 999px;
-		padding: 0.1rem 0.6rem;
+		border: 0;
+		border-radius: 0;
+		padding: 0.2rem 0.7rem;
 		margin: 0;
 		min-height: 0;
 		line-height: 1.5;
@@ -325,10 +328,15 @@ const allTags = [...new Set(listings.flatMap((l) => l.tags))].sort((a, b) => a.l
 		font-family: inherit;
 		cursor: pointer;
 	}
+	.listing-install-tab + .listing-install-tab {
+		border-left: 1px solid var(--linear-border);
+	}
+	.listing-install-tab:hover {
+		color: var(--sl-color-white);
+	}
 	.listing-install-tab[aria-pressed='true'] {
-		color: var(--linear-accent-hover);
-		background: var(--linear-accent-low);
-		border-color: var(--sl-color-accent);
+		color: var(--sl-color-white);
+		background: var(--linear-panel-bg-elevated);
 	}
 	.listing-install-command {
 		display: block;
