@@ -13,7 +13,7 @@
 				"ref": "cyberfleet@0.6.0"
 			},
 			"description": "Fleet & crew personas over cyberlegion — Pod (ship's bridge), Operator (command center), Crimp (crew recruitment), and Mechanic (automaton building).",
-			"homepage": "https://github.com/cyberuni/cyberfleet",
+			"homepage": "https://cyberuni.github.io/cyberfleet/",
 			"repository": "https://github.com/cyberuni/cyberfleet",
 			"license": "MIT",
 			"keywords": ["agent", "dispatch", "fleet"]
@@ -27,7 +27,7 @@
 				"ref": "cyber-sdd@0.7.3"
 			},
 			"description": "Documentation SDD plugin. Spec, write, and verify documentation — guides, tutorials, articles, reference pages, and READMEs — as implementation artifacts with verifiable structure.",
-			"homepage": "https://github.com/cyberuni/cyber-sdd",
+			"homepage": "https://cyberuni.github.io/cyber-sdd/",
 			"repository": "https://github.com/cyberuni/cyber-sdd",
 			"license": "MIT",
 			"keywords": ["docs", "sdd"]
@@ -145,7 +145,7 @@
 				"ref": "repobuddy@4.3.1"
 			},
 			"description": "Agent skills for managing a repository — issues, dependency PRs, GitHub Pages, repo setup, and npm trusted publishing.",
-			"homepage": "https://github.com/repobuddy/repobuddy",
+			"homepage": "https://repobuddy.github.io/repobuddy/",
 			"repository": "https://github.com/repobuddy/repobuddy",
 			"license": "MIT",
 			"keywords": ["agent-skills", "repository", "github", "automation", "cli"]
