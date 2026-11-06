@@ -156,7 +156,7 @@
 				"source": "git-subdir",
 				"url": "https://github.com/cyber-uni/cyber-jira.git",
 				"path": "packages/cyber-jira",
-				"ref": "cyber-jira@0.1.0"
+				"ref": "cyber-jira@0.1.1"
 			},
 			"description": "Agent skills for Jira, driving the jira CLI.",
 			"homepage": "https://cyber-uni.github.io/cyber-jira/",
