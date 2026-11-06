@@ -14,7 +14,7 @@
         "ref": "cyberfleet@0.6.0"
       },
       "description": "Fleet & crew personas over cyberlegion — Pod (ship's bridge), Operator (command center), Crimp (crew recruitment), and Mechanic (automaton building).",
-      "homepage": "https://github.com/cyberuni/cyberfleet",
+      "homepage": "https://cyberuni.github.io/cyberfleet/",
       "repository": "https://github.com/cyberuni/cyberfleet",
       "license": "MIT",
       "keywords": [
@@ -32,7 +32,7 @@
         "ref": "cyberlegion@1.6.1"
       },
       "description": "Agent session spawning, messaging, and dispatch — the Legion and its Legate.",
-      "homepage": "https://github.com/cyberuni/cyberlegion",
+      "homepage": "https://cyberuni.github.io/cyberlegion/",
       "repository": "https://github.com/cyberuni/cyberlegion",
       "license": "MIT",
       "keywords": [
@@ -69,7 +69,7 @@
         "ref": "cyber-sdd@0.7.3"
       },
       "description": "Spec-Driven Development. Scaffold, validate, and maintain behavioral specs (spec.md + .feature files) for software features.",
-      "homepage": "https://github.com/cyberuni/cyber-sdd",
+      "homepage": "https://cyberuni.github.io/cyber-sdd/",
       "repository": "https://github.com/cyberuni/cyber-sdd",
       "license": "MIT",
       "keywords": [
@@ -86,7 +86,7 @@
         "ref": "cyber-sdd@0.7.3"
       },
       "description": "Agent Config Evaluation & Development. Spec, evaluate, and improve agent configurations: skills, AGENTS.md sections, subagent definitions, and commands.",
-      "homepage": "https://github.com/cyberuni/cyber-sdd",
+      "homepage": "https://cyberuni.github.io/cyber-sdd/",
       "repository": "https://github.com/cyberuni/cyber-sdd",
       "license": "MIT",
       "keywords": [
@@ -103,7 +103,7 @@
         "ref": "cyber-sdd@0.7.3"
       },
       "description": "Documentation SDD plugin. Spec, write, and verify documentation — guides, tutorials, articles, reference pages, and READMEs — as implementation artifacts with verifiable structure.",
-      "homepage": "https://github.com/cyberuni/cyber-sdd",
+      "homepage": "https://cyberuni.github.io/cyber-sdd/",
       "repository": "https://github.com/cyberuni/cyber-sdd",
       "license": "MIT",
       "keywords": [
@@ -120,7 +120,7 @@
         "ref": "cyber-asana@0.22.3"
       },
       "description": "Asana CLI and agent skills, with an opt-in MCP server.",
-      "homepage": "https://github.com/cyberuni/cyber-asana",
+      "homepage": "https://cyberuni.github.io/cyber-asana/",
       "repository": "https://github.com/cyberuni/cyber-asana",
       "license": "MIT",
       "keywords": [
@@ -139,7 +139,7 @@
         "ref": "cyber-figma@0.2.0"
       },
       "description": "Figma CLI and MCP server for AI agents.",
-      "homepage": "https://github.com/cyberuni/cyber-figma",
+      "homepage": "https://cyberuni.github.io/cyber-figma/",
       "repository": "https://github.com/cyberuni/cyber-figma",
       "license": "MIT",
       "keywords": [
@@ -158,7 +158,7 @@
         "ref": "universal-plugin@0.17.1"
       },
       "description": "Research and design toolkit for building universal AI coding agent plugins that work across Claude Code, Cursor, Codex, and GitHub Copilot CLI.",
-      "homepage": "https://github.com/cyberuni/universal-plugin",
+      "homepage": "https://cyberuni.github.io/universal-plugin/",
       "repository": "https://github.com/cyberuni/universal-plugin",
       "license": "MIT",
       "keywords": [
@@ -212,7 +212,7 @@
         "ref": "buddy-agent-harness@1.0.1"
       },
       "description": "Initialize standards-based agent configuration across agent harnesses",
-      "homepage": "https://github.com/repobuddy/buddy-agent-harness",
+      "homepage": "https://repobuddy.github.io/buddy-agent-harness/",
       "repository": "https://github.com/repobuddy/buddy-agent-harness",
       "license": "MIT",
       "keywords": [
@@ -232,7 +232,7 @@
         "ref": "repobuddy@4.3.1"
       },
       "description": "Agent skills for managing a repository — issues, dependency PRs, GitHub Pages, repo setup, and npm trusted publishing.",
-      "homepage": "https://github.com/repobuddy/repobuddy",
+      "homepage": "https://repobuddy.github.io/repobuddy/",
       "repository": "https://github.com/repobuddy/repobuddy",
       "license": "MIT",
       "keywords": [
@@ -252,7 +252,7 @@
         "ref": "cyber-sdd-2@0.2.0"
       },
       "description": "Spec-Driven Development, second generation — the SDD process plugin and its CLI.",
-      "homepage": "https://github.com/cyberuni/cyber-sdd",
+      "homepage": "https://cyberuni.github.io/cyber-sdd/",
       "repository": "https://github.com/cyberuni/cyber-sdd",
       "license": "MIT",
       "keywords": [
