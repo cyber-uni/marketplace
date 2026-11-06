@@ -166,6 +166,20 @@
 			"repository": "https://github.com/cyberuni/cyber-sdd",
 			"license": "MIT",
 			"keywords": ["sdd", "spec", "process", "cli"]
+		},
+		{
+			"name": "cyber-jira",
+			"source": {
+				"source": "github",
+				"repo": "cyber-uni/cyber-jira",
+				"path": "packages/cyber-jira",
+				"ref": "cyber-jira@0.1.0"
+			},
+			"description": "Agent skills for Jira, driving the jira CLI.",
+			"homepage": "https://cyber-uni.github.io/cyber-jira/",
+			"repository": "https://github.com/cyber-uni/cyber-jira",
+			"license": "MIT",
+			"keywords": ["jira", "cli", "productivity", "project-management"]
 		}
 	]
 }
