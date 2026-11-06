@@ -46,6 +46,7 @@ Each plugin is listed under the name and source it ships from.
 | `cyber-agentkit` | [cyber-uni/cyber-agentkit](https://github.com/cyber-uni/cyber-agentkit) `packages/cyber-agentkit` | yes | yes | yes |
 | `cyber-asana` | [cyberuni/cyber-asana](https://github.com/cyberuni/cyber-asana) `packages/cyber-asana` | yes | yes | yes |
 | `cyber-figma` | [cyberuni/cyber-figma](https://github.com/cyberuni/cyber-figma) `packages/cyber-figma` | yes | yes | yes |
+| `cyber-jira` | [cyber-uni/cyber-jira](https://github.com/cyber-uni/cyber-jira) `packages/cyber-jira` | yes | yes | yes |
 | `cyber-mux` | [cyberuni/cyber-mux](https://github.com/cyberuni/cyber-mux) `packages/cyber-mux` | yes | yes | yes |
 | `cyberfleet` | [cyberuni/cyberfleet](https://github.com/cyberuni/cyberfleet) `packages/cyberfleet` | yes | yes | yes |
 | `cyberlegion` | [cyberuni/cyberlegion](https://github.com/cyberuni/cyberlegion) `packages/cyberlegion` | yes | yes | yes |
