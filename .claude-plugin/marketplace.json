@@ -188,10 +188,8 @@
     {
       "name": "cyber-agentkit",
       "source": {
-        "source": "git-subdir",
-        "url": "https://github.com/cyber-uni/cyber-agentkit.git",
-        "path": "packages/cyber-agentkit",
-        "ref": "cyber-agentkit@2.1.0"
+        "source": "npm",
+        "package": "cyber-agentkit"
       },
       "description": "An agent-harness-agnostic toolkit: the fundamental features agent tools need, working the same on every harness. Detect the running harness, check plugin dependencies, resolve layered reference documents, and lease git worktrees.",
       "homepage": "https://cyber-uni.github.io/cyber-agentkit/",
