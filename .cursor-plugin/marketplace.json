@@ -9,8 +9,7 @@
 			"source": {
 				"source": "git-subdir",
 				"url": "https://github.com/cyberuni/cyberfleet.git",
-				"path": "packages/cyberfleet",
-				"ref": "cyberfleet@0.8.1"
+				"path": "packages/cyberfleet"
 			},
 			"description": "Fleet & crew personas over cyberlegion — Pod (ship's bridge), Operator (command center), Crimp (crew recruitment), and Mechanic (automaton building).",
 			"homepage": "https://cyberuni.github.io/cyberfleet/",
@@ -23,8 +22,7 @@
 			"source": {
 				"source": "git-subdir",
 				"url": "https://github.com/cyberuni/cyber-sdd.git",
-				"path": "plugins/quill",
-				"ref": "cyber-sdd@0.7.3"
+				"path": "plugins/quill"
 			},
 			"description": "Documentation SDD plugin. Spec, write, and verify documentation — guides, tutorials, articles, reference pages, and READMEs — as implementation artifacts with verifiable structure.",
 			"homepage": "https://cyberuni.github.io/cyber-sdd/",
@@ -50,8 +48,7 @@
 			"source": {
 				"source": "git-subdir",
 				"url": "https://github.com/cyberuni/cyberlegion.git",
-				"path": "packages/cyberlegion",
-				"ref": "cyberlegion@1.8.0"
+				"path": "packages/cyberlegion"
 			}
 		},
 		{
@@ -59,8 +56,7 @@
 			"source": {
 				"source": "git-subdir",
 				"url": "https://github.com/cyberuni/cyber-mux.git",
-				"path": "packages/cyber-mux",
-				"ref": "cyber-mux@0.12.0"
+				"path": "packages/cyber-mux"
 			}
 		},
 		{
@@ -68,8 +64,7 @@
 			"source": {
 				"source": "git-subdir",
 				"url": "https://github.com/cyberuni/cyber-sdd.git",
-				"path": "plugins/sdd",
-				"ref": "cyber-sdd@0.7.3"
+				"path": "plugins/sdd"
 			}
 		},
 		{
@@ -77,8 +72,7 @@
 			"source": {
 				"source": "git-subdir",
 				"url": "https://github.com/cyberuni/cyber-sdd.git",
-				"path": "plugins/aced",
-				"ref": "cyber-sdd@0.7.3"
+				"path": "plugins/aced"
 			}
 		},
 		{
@@ -86,8 +80,7 @@
 			"source": {
 				"source": "git-subdir",
 				"url": "https://github.com/cyberuni/cyber-asana.git",
-				"path": "packages/cyber-asana",
-				"ref": "cyber-asana@0.22.3"
+				"path": "packages/cyber-asana"
 			}
 		},
 		{
@@ -95,8 +88,7 @@
 			"source": {
 				"source": "git-subdir",
 				"url": "https://github.com/cyberuni/cyber-figma.git",
-				"path": "packages/cyber-figma",
-				"ref": "cyber-figma@0.2.0"
+				"path": "packages/cyber-figma"
 			}
 		},
 		{
@@ -104,8 +96,7 @@
 			"source": {
 				"source": "git-subdir",
 				"url": "https://github.com/cyberuni/universal-plugin.git",
-				"path": "packages/universal-plugin",
-				"ref": "universal-plugin@0.17.1"
+				"path": "packages/universal-plugin"
 			}
 		},
 		{
@@ -113,8 +104,7 @@
 			"source": {
 				"source": "git-subdir",
 				"url": "https://github.com/cyber-uni/cyber-agentkit.git",
-				"path": "packages/cyber-agentkit",
-				"ref": "cyber-agentkit@2.1.0"
+				"path": "packages/cyber-agentkit"
 			},
 			"description": "An agent-harness-agnostic toolkit: the fundamental features agent tools need, working the same on every harness. Detect the running harness, check plugin dependencies, resolve layered reference documents, and lease git worktrees.",
 			"homepage": "https://cyber-uni.github.io/cyber-agentkit/",
@@ -127,8 +117,7 @@
 			"source": {
 				"source": "git-subdir",
 				"url": "https://github.com/repobuddy/buddy-agent-harness.git",
-				"path": "packages/buddy-agent-harness",
-				"ref": "buddy-agent-harness@1.0.1"
+				"path": "packages/buddy-agent-harness"
 			},
 			"description": "Initialize standards-based agent configuration across agent harnesses",
 			"homepage": "https://repobuddy.github.io/buddy-agent-harness/",
@@ -141,8 +130,7 @@
 			"source": {
 				"source": "git-subdir",
 				"url": "https://github.com/repobuddy/repobuddy.git",
-				"path": "packages/buddy",
-				"ref": "repobuddy@4.5.0"
+				"path": "packages/buddy"
 			},
 			"description": "Agent skills for managing a repository — issues, dependency PRs, GitHub Pages, repo setup, and npm trusted publishing.",
 			"homepage": "https://repobuddy.github.io/repobuddy/",
@@ -155,8 +143,7 @@
 			"source": {
 				"source": "git-subdir",
 				"url": "https://github.com/cyber-uni/cyber-jira.git",
-				"path": "packages/cyber-jira",
-				"ref": "cyber-jira@0.1.1"
+				"path": "packages/cyber-jira"
 			},
 			"description": "Agent skills for Jira, driving the jira CLI.",
 			"homepage": "https://cyber-uni.github.io/cyber-jira/",
