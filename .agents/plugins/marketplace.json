@@ -10,7 +10,7 @@
         "source": "git-subdir",
         "url": "https://github.com/cyberuni/cyberfleet.git",
         "path": "packages/cyberfleet",
-        "ref": "cyberfleet@0.6.0"
+        "ref": "cyberfleet@0.8.0"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -24,7 +24,7 @@
         "source": "git-subdir",
         "url": "https://github.com/cyberuni/cyberlegion.git",
         "path": "packages/cyberlegion",
-        "ref": "cyberlegion@1.6.1"
+        "ref": "cyberlegion@1.7.0"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -38,7 +38,7 @@
         "source": "git-subdir",
         "url": "https://github.com/cyberuni/cyber-mux.git",
         "path": "packages/cyber-mux",
-        "ref": "cyber-mux@0.10.3"
+        "ref": "cyber-mux@0.12.0"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -175,7 +175,7 @@
         "source": "git-subdir",
         "url": "https://github.com/repobuddy/repobuddy.git",
         "path": "packages/buddy",
-        "ref": "repobuddy@4.3.1"
+        "ref": "repobuddy@4.5.0"
       },
       "policy": {
         "installation": "AVAILABLE",
