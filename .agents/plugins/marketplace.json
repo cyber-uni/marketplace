@@ -10,7 +10,7 @@
         "source": "git-subdir",
         "url": "https://github.com/cyberuni/cyberfleet.git",
         "path": "packages/cyberfleet",
-        "ref": "cyberfleet@0.8.0"
+        "ref": "cyberfleet@0.8.1"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -24,7 +24,7 @@
         "source": "git-subdir",
         "url": "https://github.com/cyberuni/cyberlegion.git",
         "path": "packages/cyberlegion",
-        "ref": "cyberlegion@1.7.0"
+        "ref": "cyberlegion@1.8.0"
       },
       "policy": {
         "installation": "AVAILABLE",
