@@ -11,7 +11,7 @@
         "source": "git-subdir",
         "url": "https://github.com/cyberuni/cyberfleet.git",
         "path": "packages/cyberfleet",
-        "ref": "cyberfleet@0.6.0"
+        "ref": "cyberfleet@0.8.0"
       },
       "description": "Fleet & crew personas over cyberlegion — Pod (ship's bridge), Operator (command center), Crimp (crew recruitment), and Mechanic (automaton building).",
       "homepage": "https://cyberuni.github.io/cyberfleet/",
@@ -29,7 +29,7 @@
         "source": "git-subdir",
         "url": "https://github.com/cyberuni/cyberlegion.git",
         "path": "packages/cyberlegion",
-        "ref": "cyberlegion@1.6.1"
+        "ref": "cyberlegion@1.7.0"
       },
       "description": "Agent session spawning, messaging, and dispatch — the Legion and its Legate.",
       "homepage": "https://cyberuni.github.io/cyberlegion/",
@@ -47,7 +47,7 @@
         "source": "git-subdir",
         "url": "https://github.com/cyberuni/cyber-mux.git",
         "path": "packages/cyber-mux",
-        "ref": "cyber-mux@0.10.3"
+        "ref": "cyber-mux@0.12.0"
       },
       "description": "Cross-multiplexer pane control: open, send, read, focus, and close panes over tmux, herdr, wezterm, and more.",
       "homepage": "https://cyberuni.github.io/cyber-mux/",
@@ -229,7 +229,7 @@
         "source": "git-subdir",
         "url": "https://github.com/repobuddy/repobuddy.git",
         "path": "packages/buddy",
-        "ref": "repobuddy@4.3.1"
+        "ref": "repobuddy@4.5.0"
       },
       "description": "Agent skills for managing a repository — issues, dependency PRs, GitHub Pages, repo setup, and npm trusted publishing.",
       "homepage": "https://repobuddy.github.io/repobuddy/",
