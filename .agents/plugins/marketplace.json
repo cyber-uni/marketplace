@@ -184,6 +184,31 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Productivity"
+    },
+    {
+      "name": "buddy-codecov",
+      "source": {
+        "source": "npm",
+        "package": "buddy-codecov"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "buddy-changesets",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/repobuddy/buddy-changesets.git",
+        "path": "packages/buddy-changesets"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
     }
   ]
 }
