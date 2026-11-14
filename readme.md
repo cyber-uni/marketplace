@@ -43,6 +43,7 @@ Each plugin is listed under the name and source it ships from.
 | --------------------- | ------------------------------------------------------------------------------ | ----------- | ----- | ----------- |
 | `aced` | [cyberuni/cyber-sdd](https://github.com/cyberuni/cyber-sdd) `plugins/aced` | yes | yes | yes |
 | `buddy-agent-harness` | [repobuddy/buddy-agent-harness](https://github.com/repobuddy/buddy-agent-harness) `packages/buddy-agent-harness` | yes | yes | yes |
+| `clibuilder` | [clibuilder/clibuilder](https://github.com/clibuilder/clibuilder) `packages/clibuilder` | yes | yes | yes |
 | `cyber-agentkit` | [cyber-uni/cyber-agentkit](https://github.com/cyber-uni/cyber-agentkit) `packages/cyber-agentkit` | yes | yes | yes |
 | `cyber-asana` | [cyberuni/cyber-asana](https://github.com/cyberuni/cyber-asana) `packages/cyber-asana` | yes | yes | yes |
 | `cyber-figma` | [cyberuni/cyber-figma](https://github.com/cyberuni/cyber-figma) `packages/cyber-figma` | yes | yes | yes |

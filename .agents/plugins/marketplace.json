@@ -209,6 +209,19 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Productivity"
+    },
+    {
+      "name": "clibuilder",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/clibuilder/clibuilder.git",
+        "path": "packages/clibuilder"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
     }
   ]
 }
