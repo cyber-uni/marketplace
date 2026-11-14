@@ -213,9 +213,8 @@
     {
       "name": "clibuilder",
       "source": {
-        "source": "git-subdir",
-        "url": "https://github.com/clibuilder/clibuilder.git",
-        "path": "packages/clibuilder"
+        "source": "npm",
+        "package": "clibuilder"
       },
       "policy": {
         "installation": "AVAILABLE",

@@ -302,9 +302,8 @@
     {
       "name": "clibuilder",
       "source": {
-        "source": "git-subdir",
-        "url": "https://github.com/clibuilder/clibuilder.git",
-        "path": "packages/clibuilder"
+        "source": "npm",
+        "package": "clibuilder"
       },
       "description": "Skills for building agent-friendly command-line tools with clibuilder, following its version of the AXI conventions.",
       "homepage": "https://clibuilder.github.io/clibuilder/",
