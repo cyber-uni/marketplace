@@ -162,9 +162,8 @@
     {
       "name": "repobuddy",
       "source": {
-        "source": "git-subdir",
-        "url": "https://github.com/repobuddy/repobuddy.git",
-        "path": "packages/buddy"
+        "source": "npm",
+        "package": "repobuddy"
       },
       "policy": {
         "installation": "AVAILABLE",
