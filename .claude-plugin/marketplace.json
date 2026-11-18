@@ -108,9 +108,8 @@
     {
       "name": "cyber-asana",
       "source": {
-        "source": "git-subdir",
-        "url": "https://github.com/cyberuni/cyber-asana.git",
-        "path": "packages/cyber-asana"
+        "source": "npm",
+        "package": "cyber-asana"
       },
       "description": "Asana CLI and agent skills, with an opt-in MCP server.",
       "homepage": "https://cyberuni.github.io/cyber-asana/",
