@@ -72,9 +72,8 @@
     {
       "name": "cyber-asana",
       "source": {
-        "source": "git-subdir",
-        "url": "https://github.com/cyberuni/cyber-asana.git",
-        "path": "packages/cyber-asana"
+        "source": "npm",
+        "package": "cyber-asana"
       },
       "policy": {
         "installation": "AVAILABLE",
