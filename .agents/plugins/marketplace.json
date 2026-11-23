@@ -219,6 +219,19 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Productivity"
+    },
+    {
+      "name": "project-tracker",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/cyber-uni/project-tracker.git",
+        "path": "packages/project-tracker"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
     }
   ]
 }
