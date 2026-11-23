@@ -191,6 +191,19 @@
 			"repository": "https://github.com/clibuilder/clibuilder",
 			"license": "MIT",
 			"keywords": ["cli", "command", "builder", "axi", "agent"]
+		},
+		{
+			"name": "project-tracker",
+			"source": {
+				"source": "github",
+				"repo": "cyber-uni/project-tracker",
+				"path": "packages/project-tracker"
+			},
+			"description": "Agent skills to file issues and plan epics and initiatives on your project tracker.",
+			"homepage": "https://cyber-uni.github.io/project-tracker/",
+			"repository": "https://github.com/cyber-uni/project-tracker",
+			"license": "MIT",
+			"keywords": ["project-tracker", "issues", "epics", "productivity", "project-management"]
 		}
 	]
 }
